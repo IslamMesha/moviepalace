@@ -1,0 +1,13 @@
+<!-- templates/base.html -->
+{% load django_simple_tags %}
+<html lang="en">
+<body>
+{% block heading %}
+    <h1>Movie Palace</h1>
+    Current value of DEBUG is {% get_setting "DEBUG" %}
+{% endblock heading %}
+
+{% block content %}
+{% endblock content %}
+</body>
+</html>
